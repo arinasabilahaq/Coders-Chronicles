@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MyStoryApp</string>
+
+    <!--    item story-->
+    <string name="story_image">story image</string>
+    <string name="username">Username</string>
+    <string name="story_description">Story Description</string>
+
+    <!--    menu-->
+    <string name="logout">Logout</string>
+    <string name="add_story">Add Story</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="description">Description</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="upload">Upload</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="signup">Signup</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="already_have_an_account">Already have an account?</string>
+
+    <string name="input_pass">Input Your Password</string>
+    <string name="invalid_email">Invalid Format</string>
+    <string name="name_required">Name is required</string>
+    <string name="pass_length">Password must be at least 8 characters</string>
+    <string name="didnt_get_permission">Didn\'t get permission</string>
+    <string name="input_image_first">Input Your Image First!</string>
+    <string name="check_input">Check Your Input</string>
+    <string name="sign_in_to_your_account">Sign in to your\naccount</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="retry">Retry</string>
+    <string name="location_not_found">Location is not found. Try Again</string>
+    <string name="maps">Maps Story</string>
+    <string name="setting">Language</string>
+    <string name="story_from">Story from : </string>
+    <string name="add_your_location">Your Location</string>
+    <string name="add_location">Add Location</string>
+</resources>

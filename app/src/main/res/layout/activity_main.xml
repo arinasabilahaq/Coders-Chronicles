@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_story"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_story" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorPressed="@color/white"
+        fab:menu_colorRipple="#d1c2c2"
+        fab:menu_fab_size="normal"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_colorNormal="@color/white"
+        fab:menu_icon="@drawable/ic_menu"
+        fab:menu_labels_colorNormal="@color/green"
+        fab:menu_labels_cornerRadius="8dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_padding="10dp"
+        fab:menu_labels_paddingLeft="10dp"
+        fab:menu_labels_paddingRight="10dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_showShadow="false"
+        fab:menu_labels_position="left"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_shadowRadius="0dp"
+        fab:menu_openDirection="up"
+        fab:menu_showShadow="false">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add_story"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_colorPressed="@color/green"
+            app:fab_colorNormal="@color/white"
+            android:src="@drawable/ic_camera"
+            fab:fab_label="@string/add_story"
+            fab:fab_size="mini"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_maps"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_colorPressed="@color/green"
+            android:src="@drawable/ic_map"
+            fab:fab_label="@string/maps"
+            app:fab_colorNormal="@color/white"
+            fab:fab_size="mini"
+            />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorPressed="@color/green"
+            app:fab_colorNormal="@color/white"
+            android:src="@drawable/ic_logout"
+            fab:fab_label="@string/logout"
+            fab:fab_size="mini"
+            />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/beige"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_story" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
